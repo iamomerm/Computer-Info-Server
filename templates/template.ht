@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Computer Info</title>
+</head>
+<body>
+<div id="Container-Div">
+    <div id="Column-Div" style="width: 80%">
+        <div id="Header-Div">
+            <h1 id="Header">TN-ILT-OMEN</h1>
+            </div>
+                <div id="Information-Div">
+                    <h1 class="SubTitles">Computer Information</h1>
+                    <h3 class="Information" id="Date"></h3>
+                    <h1 class="Subjects">Hardware</h1>
+                    <h3 class="Information" id="CPU"></h3>
+                    <h3 class="Information" id="CPU-Usage"></h3>
+                    <h3 class="Information" id="Ram-Total"></h3>
+                    <h3 class="Information" id="Ram-Available"></h3>
+                    <h3 class="Information" id="Ram-Used"></h3>
+                    <h1 class="Subjects">Operating System</h1>
+                    <h3 class="Information" id="OS"></h3>
+                    <h1 class="Subjects">Drives</h1>
+                <div id="Drives">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    body { font-family: Calibri }
+    #Container-Div { display: flex; justify-content: center } 
+    #Column-Div  { display: flex; flex-direction: column; justify-content: center } 
+    #Header { font-size: 30px; text-align: center; font-weight: normal; color: white }
+    #Header-Div { display: flex; flex-direction: column; justify-content: center; height: 60px; background: darkorange }
+    .SubTitles { font-size: 18px; text-decoration: underline }
+    .Subjects { font-size: 16px; font-weight: normal; text-decoration: underline; margin-top: 30px }
+    .Information { font-size: 16px; font-weight: normal }
+</style>
+<script>
+    let myDate = new Date();
+    document.getElementById("Date").innerHTML = "Date: " + String(myDate);
+</script>
+</html>
