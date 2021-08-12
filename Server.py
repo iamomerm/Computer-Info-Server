@@ -114,4 +114,6 @@ def Home():
     return render_template('index.html')
 
 if __name__ == '__main__':
+    Application.jinja_env.auto_reload = True
+    Application.config['TEMPLATES_AUTO_RELOAD'] = True
     Application.run(debug=False, host='0.0.0.0', port=8000)
